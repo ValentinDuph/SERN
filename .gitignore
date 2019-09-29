@@ -6,6 +6,9 @@
 /.pnp
 .pnp.js
 
+us-census.db
+
+
 # testing
 /coverage
 
