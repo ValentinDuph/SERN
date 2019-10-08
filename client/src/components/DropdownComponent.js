@@ -12,7 +12,7 @@ const DropdownComponent = ({selectedColumn, columns, selectColumn}) => {
         
             <Dropdown.Menu>
                 {columns.map(columns => (
-                    <Dropdown.Item onClick={() => selectColumn(columns)}>{columns}</Dropdown.Item>
+                    <Dropdown.Item onClick={() => selectColumn(columns)} key={columns}>{columns}</Dropdown.Item>
                 ))}
             </Dropdown.Menu>
         </Dropdown>

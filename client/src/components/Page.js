@@ -52,12 +52,12 @@ class Page extends Component {
         let { selectedColumn } = this.state; 
         let { columnInfo } = this.state; 
         return (
-            <div class="container">
-                <div class="row justify-content-around">
-                    <div class="col-sm-3">
+            <div className="container">
+                <div className="row justify-content-around">
+                    <div className="col-sm-3">
                         <DropdownComponent selectedColumn={selectedColumn} columns={columns} selectColumn={this.selectColumn}/> 
                     </div>
-                    <div class="col-sm-6">
+                    <div className="col-sm-6">
                         <Array columnInfo={columnInfo}/>
                     </div>
                 </div>

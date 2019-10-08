@@ -15,10 +15,10 @@ const Array = ({columnInfo}) => {
                 </tr>
             </thead>
             <tbody>
-                {columnInfo.map(tr => (
+                {columnInfo.map((tr) => (
                     <tr>
                         {keys.map( td => (
-                            <td>{tr[td]}</td>
+                            <td key={tr[td]}>{tr[td]}</td>
                         ))}
                     </tr>
                 ))}
